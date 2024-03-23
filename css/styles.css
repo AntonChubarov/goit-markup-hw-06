@@ -78,11 +78,27 @@ header {
   .container {
     max-width: 768px;
   }
+
+  .customers-section > .container {
+    padding: 0 108px;
+  }
+
+  footer > .container {
+    padding: 0 108px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1156px;
+  }
+
+  .customers-section > .container {
+    padding: 0 16px;
+  }
+
+  footer > .container {
+    padding: 0 16px;
   }
 }
 
@@ -372,14 +388,8 @@ address {
     ),
     url(../images/people-office.jpg);
   background-position: center;
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 768px) {
-  .order-section {
-    background-size: 768px auto;
-  }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -619,6 +629,7 @@ address {
 @media screen and (min-width: 768px) {
   .team-list {
     gap: 24px;
+    row-gap: 64px;
   }
 }
 
