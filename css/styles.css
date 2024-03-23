@@ -370,7 +370,7 @@ address {
       rgba(var(--navy-blue-rgb), 0.7),
       rgba(var(--navy-blue-rgb), 0.7)
     ),
-    url(../images/people-office_1x.jpg);
+    url(../images/people-office.jpg);
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -382,6 +382,16 @@ address {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .order-section {
+    background-image: linear-gradient(
+            rgba(var(--navy-blue-rgb), 0.7),
+            rgba(var(--navy-blue-rgb), 0.7)
+    ),
+    url(../images/people-office@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .order-section {
     padding-top: 188px;
@@ -390,8 +400,18 @@ address {
             rgba(var(--navy-blue-rgb), 0.7),
             rgba(var(--navy-blue-rgb), 0.7)
     ),
-    url(../images/people-office_2x.jpg);
+    url(../images/people-office-wide.jpg);
     background-size: 1440px auto;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .order-section {
+    background-image: linear-gradient(
+            rgba(var(--navy-blue-rgb), 0.7),
+            rgba(var(--navy-blue-rgb), 0.7)
+    ),
+    url(../images/people-office-wide@2x.jpg);
   }
 }
 
